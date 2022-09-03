@@ -10,6 +10,7 @@ let filters = document.querySelectorAll(".filters li")
 let arrayOfObject = JSON.parse(window.localStorage.getItem("task")) || [];
 addToPage("all");
 checkItemsLeft()
+sortList()
 
 
 //[1] when enter is pressed
@@ -67,6 +68,7 @@ function addToPage(filter) {
                 <i onclick="deleteTask(${index})" class="fa-solid fa-trash-can"></i>`
             tasksUl.appendChild(taskContainer)
             checkItemsLeft()
+            sortList()
         }
     })
 }
