@@ -156,11 +156,12 @@ modes.forEach(mode => {
 // drop =>	Fired when the element is being dropped.
 
 //[17] drag and drop tasks
-let taskToDrag = document.querySelectorAll(".task-container")
+
 let draggedElement;
 window.onload = sortList
 
 function sortList() {
+    let taskToDrag = document.querySelectorAll(".task-container")
     taskToDrag.forEach(ele => {
         ele.addEventListener("dragstart", () => {
             draggedElement = ele
@@ -214,20 +215,6 @@ function sortList() {
     })
 }
 
-//put the number of tasks in the span
-// spanOfItems.innerText = arrayOfObject.length
-
-
-// let content = document.querySelector("content")
-// window.onload = () => {
-//     if(arrayOfObject.length > 0){
-//         //put the number of tasks in the span
-//         spanOfItems.innerText = arrayOfObject.length
-//     }
-//     else{
-//         spanOfItems.innerText = "0"
-//     }
-// }
 
 //[18]
 function checkItemsLeft(){
