@@ -13,11 +13,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #181824;
   min-height: 100vh;
-  /* background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 ul {
@@ -381,5 +381,5 @@ footer .clear:hover {
 
 .note {
   color: #4e4f63;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
